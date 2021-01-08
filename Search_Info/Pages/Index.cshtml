@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Search Tool!</h1>
+    <p>Choose between searching for a specific PC or a specific User.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <a href="/PCSearch" class="btn btn-outline-danger" role="button">Search for a PC</a>
+                <a href="/UserSearch" class="btn btn-outline-danger" role="button">Search for a User</a>
+            </div>
+        </div>
+    </div>
+</div>

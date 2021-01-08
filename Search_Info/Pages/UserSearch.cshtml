@@ -1,0 +1,42 @@
+﻿@page
+@model Search_Info.Pages.UserSearchModel
+@{
+    ViewData["Title"] = "User Search";
+}
+<div class="text-center">
+    <h1 class="display-4">Search about a specific User:</h1>
+    <div>
+        <div class="container-fluid">
+            <form method="get">
+                <div class="row">
+                    <div class="col-md-3 m-auto">
+                        <div class="form-group">
+                            <label for="inputFirstname">First Name:</label>
+                            <input type="search" class="form-control" id="inputFirstname" name="inputFirstname" placeholder="Enter first name..." />
+                        </div>
+                    </div>
+                    <div class="col-md-3 m-auto">
+                        <div class="form-group">
+                            <label for="inputEmail">Email:</label>
+                            <input type="search" class="form-control" id="inputEmail" name="inputEmail" placeholder="Enter Email..." />
+                        </div>
+                    </div>
+                    <div class="col-md-3 m-auto">
+                        <div class="form-group">
+                            <label for="inputUsername">Username:</label>
+                            <input type="search" class="form-control" id="inputUsername" name="inputUsername" placeholder="Enter Username..." />
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mb-0">
+                    <br />
+                    <button type="submit" class="btn btn-outline-danger">Search</button>
+                </div>
+            </form>
+            <div class="text-center mb-0">
+                <br />
+                <a class="btn btn-outline-danger" asp-page="/Index">Back to Home</a>        <!-- Upon clicking the button, you'll get redirected back to the home page -->
+            </div>
+        </div>
+    </div>
+</div>

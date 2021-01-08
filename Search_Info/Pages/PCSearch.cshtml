@@ -1,0 +1,39 @@
+﻿@page
+@model Search_Info.Pages.PCSearchModel
+@{
+    ViewData["Title"] = "PC Search";
+}
+<div class="text-center">
+    <h1 class="display-4">Search about a specific PC:</h1>
+    <div>
+        <form method="get">
+            <div class="row">
+                <div class="col-sm"></div>
+                <div class="col-sm">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="pcNr">Enter PC number: </label>
+                                </td>
+                                <td>
+                                    <input type="search" class="form-control" id="Search" name="Search" />
+                                </td>
+                                <td>
+                                    <button type="submit" class="btn btn-outline-danger">Search</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm"></div>
+            </div>
+        </form>
+        <form method="post">
+            <div class="text-center mb-0">
+                <br />
+                <button type="submit" class="btn btn-outline-danger">Back to Home</button>
+            </div>
+        </form>
+    </div>
+</div>
